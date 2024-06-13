@@ -71,3 +71,14 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+@media (max-width: 600px){
+    #apodExplanation{
+        text-align: justify;
+    }
+
+    #apodPicture{
+        max-width: 80%;
+    }
+}
