@@ -11,7 +11,15 @@ const getApod = () => {
         .then(response => response.json())
         .then(data => {
 
-            document.getElementById("apodPicture").src = data.hdurl;
+            if (data.hdurl) {
+
+                document.getElementById("apodPicture").src = data.hdurl;
+
+            } else {
+                document.getElementById("apodPicture").src = data.url;
+
+            }
+
             document.getElementById("apodTitle").innerText = data.title;
             document.getElementById("apodExplanation").innerText = data.explanation;
 
