@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    background-color: #0a0a23;
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+}
+
+h1,
+h2 {
+    color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-weight: bolder;
+}
+
+
+.first-div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+
+#apodPicture {
+    margin-bottom: 20px;
+    max-width: 60%;
+    border-radius: 15px;
+}
+
+#apodTitle {
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#apodCopyright {
+    margin-top: 10px;
+    color: beige;
+}
+
+
+#apodExplanation {
+    text-align: center;
+    width: 80%;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
