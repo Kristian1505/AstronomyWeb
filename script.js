@@ -8,22 +8,25 @@ const apiUrl = "https://api.nasa.gov/planetary/apod?api_key=ahY4sf8mzgwWOCKb1jsR
 const getApod = () => {
 
     fetch(apiUrl)
-    .then (response => response.json())
-    .then (data => {
+        .then(response => response.json())
+        .then(data => {
 
-        document.getElementById("apodPicture").src = data.hdurl;
-        document.getElementById("apodTitle").innerText = data.title;
-        document.getElementById("apodExplanation").innerText = data.explanation;
-        document.getElementById("apodCopyright").innerHTML = `&copy;${data.copyright}`;
-        
+            document.getElementById("apodPicture").src = data.hdurl;
+            document.getElementById("apodTitle").innerText = data.title;
+            document.getElementById("apodExplanation").innerText = data.explanation;
 
-    })
+            if (data.copyright) {
 
-    .catch (error => {
-        console.error("Error", error)
-    });
+                document.getElementById("apodCopyright").innerHTML = `&copy;${data.copyright}`;
 
+            } else {
+                document.getElementById("apodCopyright").style.display = "none";
+            }
+        })
 
+        .catch(error => {
+            console.error("Error", error)
+        });
 };
 
 document.addEventListener('DOMContentLoaded', getApod)
