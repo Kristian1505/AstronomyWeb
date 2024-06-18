@@ -11,14 +11,29 @@ const getApod = () => {
         .then(response => response.json())
         .then(data => {
 
-            if (data.hdurl) {
+            if (data.media_type === "image"){
+
+                document.getElementById("apodVideo").style.display = "none" 
+                
+                
+                if (data.hdurl) {
 
                 document.getElementById("apodPicture").src = data.hdurl;
 
-            } else {
+                } else {
                 document.getElementById("apodPicture").src = data.url;
 
+                }
+
+
+            } else {
+
+                document.getElementById("apodPicture").style.display = "none";
+                document.getElementById("apodVideo").src = data.url;
+
             }
+
+            
 
             document.getElementById("apodTitle").innerText = data.title;
             document.getElementById("apodExplanation").innerText = data.explanation;

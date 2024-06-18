@@ -4,6 +4,8 @@
     border: 0;
 }
 
+
+
 body {
     background-color: #0a0a23;
     font-family: "Poppins", sans-serif;
@@ -21,7 +23,7 @@ h1 {
     font-weight: bolder;
 }
 
-.first-div {
+.media-content {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -30,6 +32,11 @@ h1 {
 #apodPicture {
     margin-bottom: 20px;
     max-width: 60%;
+}
+
+#apodVideo{
+    width: 60%;
+    aspect-ratio: 16/9;
 }
 
 #apodTitle {
