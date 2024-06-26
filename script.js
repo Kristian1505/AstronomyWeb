@@ -4,7 +4,7 @@
  * In a production environment, always secure API keys and sensitive data.
  * P.S. No hacking please — let’s keep this friendly :D!
  */
-const apiUrl = "https://api.nasa.gov/planetary/apod?api_key=ahY4sf8mzgwWOCKb1jsRlZZ7Hctkxbe9CHkKoSiU"
+const apiUrl = "https://api.nasa.gov/planetary/apod?api_key=ahY4sf8mzgwWOCKb1jsRlZZ7Hctkxbe9CHkKoSi"
 const getApod = () => {
 
     fetch(apiUrl)
