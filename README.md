@@ -13,3 +13,6 @@ Tech Stack
 
 Check It Out Live!
 Wanna see it in action? Blast off to https://kristian1505.github.io/AstronomyWeb/ and get your daily dose of the universe!
+
+🚧 Under Construction 🚧
+Please note, this site is currently under construction. I'm working hard to bring you a fully functional and feature-rich astronomy experience. Stay tuned for updates!
